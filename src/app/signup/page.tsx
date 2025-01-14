@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { User } from "@/models/userModel";
 import { hash } from "bcryptjs";
-import { redirect } from "next/dist/server/api-utils";
 import Image from "next/image";
 
 const Signup = () => {
