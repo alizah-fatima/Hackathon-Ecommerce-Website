@@ -15,23 +15,26 @@ import { hash } from "bcryptjs";
 import Image from "next/image";
 
 const Signup = () => {
-  const signUp = async (formData: FormData) => {
-    "use server";
+  const signUp = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevent default form submission
 
+    const formData = new FormData(e.target as HTMLFormElement);
     const name = formData.get("name") as string | undefined;
     const email = formData.get("email") as string | undefined;
     const password = formData.get("password") as string | undefined;
 
-    if (!name || !email || !password)
+    if (!name || !email || !password) {
       throw new Error("Please provide all fields");
+    }
 
     const user = await User.findOne({ email });
 
-    if (!user) throw new Error("User already exists");
+    if (user) throw new Error("User already exists");
 
     const hashedPassword = await hash(password, 8);
 
     await User.create({ name, email, password: hashedPassword });
+
   };
 
   return (
@@ -39,7 +42,7 @@ const Signup = () => {
       <div className="bg-purple-100 h-60">
         <div>
           <h3 className="text-3xl text-blue-950 font-bold pt-16 ml-64">
-          Create Account
+            Create Account
           </h3>
         </div>
         <div className="mt-2 ml-64">
@@ -50,7 +53,7 @@ const Signup = () => {
             Pages .
           </Link>
           <Link href="/signup" className="text-pink-500 text-md font-medium">
-          Create Account
+            Create Account
           </Link>
         </div>
       </div>
@@ -67,7 +70,7 @@ const Signup = () => {
           </CardHeader>
 
           <CardContent>
-            <form action="signUp" className="flex flex-col gap-4">
+            <form onSubmit={signUp} className="flex flex-col gap-4">
               <Input type="text" placeholder="Name" name="name" />
               <Input type="email" placeholder="Email Address" name="email" />
               <Input type="password" placeholder="password" name="password" />
