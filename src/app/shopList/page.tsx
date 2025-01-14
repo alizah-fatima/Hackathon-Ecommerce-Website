@@ -9,7 +9,6 @@ import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 function handleViewChange(event: React.ChangeEvent<HTMLSelectElement>) {
   const selectedValue = event.target.value;
