@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdAccountCircle } from "react-icons/md";
