@@ -60,7 +60,7 @@ const LatestProduct = () => {
             <div 
               key={index}
               className='group relative p-1 rounded-lg overflow-hidden'> 
-                <img 
+                <Image 
                    src={product.img} 
                    alt={product.title} 
                    width={100}
