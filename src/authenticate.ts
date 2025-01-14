@@ -1,3 +1,4 @@
+"use client"
 
 import { User } from '@/models/userModel';
 import { compare } from 'bcryptjs';
