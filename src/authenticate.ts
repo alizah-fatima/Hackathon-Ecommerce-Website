@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
 
       return res.status(200).json({ id: user._id, email: user.email, name: user.name });
-    } catch (err) {
+    } catch {
       return res.status(500).json({ error: 'Internal server error' });
     }
   } else {
