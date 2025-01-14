@@ -63,7 +63,7 @@ const Login = () => {
               </Button>
             </form>
 
-            <Link href="/signup" className="text-gray-500"> Don't have an account? Create Account</Link>
+            <Link href="/signup" className="text-gray-500"> Don&apos;t have an account? Create Account</Link>
           </CardFooter>
         </Card>
       </div>
