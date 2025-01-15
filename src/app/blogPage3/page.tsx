@@ -434,7 +434,7 @@ function BlogPage() {
               <div className="flex flex-col mt-6">
                 <Link href={""}>
                   <p className="text-blue-800 text-sm font-medium font-sans ml-2">
-                    It's long established fact
+                    It is long established fact
                   </p>
                 </Link>
                 <p className="text-gray-500 text-sm font-sans ml-2">
@@ -453,7 +453,7 @@ function BlogPage() {
               <div className="flex flex-col mt-6">
                 <Link href={""}>
                   <p className="text-blue-800 text-sm font-medium font-sans ml-2">
-                    It's long established fact
+                    It is long established fact
                   </p>
                 </Link>
                 <p className="text-gray-500 text-sm font-sans ml-2">
@@ -472,7 +472,7 @@ function BlogPage() {
               <div className="flex flex-col mt-6">
                 <Link href={""}>
                   <p className="text-blue-800 text-sm font-medium font-sans ml-2">
-                    It's long established fact
+                    It is long established fact
                   </p>
                 </Link>
                 <p className="text-gray-500 text-sm font-sans ml-2">
@@ -491,7 +491,7 @@ function BlogPage() {
               <div className="flex flex-col mt-6">
                 <Link href={""}>
                   <p className="text-blue-800 text-sm font-medium font-sans ml-2">
-                    It's long established fact
+                    It is long established fact
                   </p>
                 </Link>
                 <p className="text-gray-500 text-sm font-sans ml-2">
